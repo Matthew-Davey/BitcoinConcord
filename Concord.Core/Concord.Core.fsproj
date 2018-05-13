@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Buffer.fs" />
+    <Compile Include="Crypto.fs" />
+    <Compile Include="Envelope.fs" />
+    <Compile Include="PrimitiveTypes.fs" />
+    <Compile Include="Primitives/VarInt.fs" />
+    <Compile Include="Primitives/InventoryVector.fs" />
+    <Compile Include="Primitives/NetworkAddress.fs" />
+    <Compile Include="Primitives/OutPoint.fs" />
+    <Compile Include="Primitives/TxInput.fs" />
+    <Compile Include="Primitives/TxOutput.fs" />
+    <Compile Include="Primitives/VarString.fs" />
+    <Compile Include="MessageTypes.fs" />
+    <Compile Include="Messages/GetData.fs" />
+    <Compile Include="Messages/Inv.fs" />
+    <Compile Include="Messages/PingPong.fs" />
+    <Compile Include="Messages/Tx.fs" />
+    <Compile Include="Messages/Version.fs" />
+    <Compile Include="Peer.fs" />
+    <Compile Include="MessageQueue.fs" />
+    <Compile Include="Agents/HandshakeAgent.fs" />
+    <Compile Include="Agents/InventoryAgent.fs" />
+    <Compile Include="Agents/PingPongAgent.fs" />
+    <Compile Include="Agents/UnknownMessageAgent.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FSharp.Core" Version="4.3.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.1" />
+    <PackageReference Include="RabbitMQ.Client" Version="5.0.1" />
+  </ItemGroup>
+</Project>
